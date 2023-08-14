@@ -1,0 +1,6 @@
+import openai
+
+openai.api_key = "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"
+
+completion = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "what is fish"}])
+print(completion.choices[0].message.content)
